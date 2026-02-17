@@ -1,0 +1,6 @@
+{
+  "products": [
+    { "id": "1", "name": "Organic Bananas", "price": 0.99, "category": "Fruits", "image": "https://images.unsplash.com/photo-1603833665858-e61d17a86224?w=400" },
+    { "id": "2", "name": "Whole Milk", "price": 3.50, "category": "Dairy", "image": "https://images.unsplash.com/photo-1563636619-e910ef2a844b?w=400" }
+  ]
+}
