@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
 const featuredCategories = [
-  { id: 1, name: "Fruits", image: "https://via.placeholder.com/200x150?text=Fruits" },
-  { id: 2, name: "Vegetables", image: "https://via.placeholder.com/200x150?text=Vegetables" },
-  { id: 3, name: "Dairy", image: "https://via.placeholder.com/200x150?text=Dairy" },
-  { id: 4, name: "Bakery", image: "https://via.placeholder.com/200x150?text=Bakery" },
+  { id: 1, name: "Fruits", image: "https://png.pngtree.com/png-clipart/20241109/original/pngtree-beautiful-various-fruits-item-and-healthy-clipart-png-image_16788969.png" },
+  { id: 2, name: "Vegetables", image: "https://ezaccess.com/cdn/shop/articles/vegetables-fruits-white.jpg?v=1750188045" },
+  { id: 3, name: "Dairy", image: "https://www.onegreenplanet.org/wp-content/uploads/2018/05/shutterstock_412394602-e1684191591876.jpg" },
+  { id: 4, name: "Bakery", image: "https://www.lindasbakery.com/wp-content/uploads/2023/08/The-Secret-to-Making-Bakery-Quality-Bread_049202920.jpg" },
 ];
 
 const Home = () => {
@@ -17,7 +17,7 @@ const Home = () => {
             <p>Shop fresh fruits, vegetables, dairy, and more from the comfort of your home.</p>
             <Link to="/shop" className="btn-primary">Start Shopping</Link>
           </div>
-          <img src="https://via.placeholder.com/400x300?text=Fresh+Groceries" alt="Fresh Groceries" />
+          <img src="https://img.freepik.com/premium-vector/logo-fresh-grocery-with-basket-vegetables_763064-309.jpg" alt="Fresh Groceries" />
         </div>
       </section>
 
