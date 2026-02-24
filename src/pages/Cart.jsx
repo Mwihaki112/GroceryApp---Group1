@@ -20,6 +20,7 @@ const Cart = () => {
         item.id === id ? updatedItem : item
       );
 
+      // Optimistic UI update
       setCart(updatedCart);
 
       await axios.put(`http://localhost:3000/cart/${id}`, updatedItem);
@@ -41,12 +42,27 @@ const Cart = () => {
 
       {cart.map(item => (
         <div key={item.id} className="cart-item">
-          <div>
-            <h2>{item.name}</h2>
-            <p>Ksh.{item.price.toFixed(2)}</p>
+          
+          {/* Thumbnail */}
+          <div className="cart-item-left">
+            <img
+              src={item.image}
+              alt={item.name}
+              className="cart-thumbnail"
+            />
           </div>
 
-          <div>
+          {/* Product Info */}
+          <div className="cart-item-info">
+            <h2>{item.name}</h2>
+            <p>Ksh.{item.price.toFixed(2)}</p>
+            <p className="item-subtotal">
+              Subtotal: Ksh.{(item.price * item.quantity).toFixed(2)}
+            </p>
+          </div>
+
+          {/* Actions */}
+          <div className="cart-item-actions">
             <input
               type="number"
               min="1"
@@ -62,7 +78,11 @@ const Cart = () => {
         </div>
       ))}
 
-      <h2>Grand Total: Ksh.{grandTotal.toFixed(2)}</h2>
+      {cart.length > 0 && (
+        <div className="cart-total">
+          <h2>Grand Total: Ksh.{grandTotal.toFixed(2)}</h2>
+        </div>
+      )}
     </div>
   );
 };

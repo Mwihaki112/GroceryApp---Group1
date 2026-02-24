@@ -107,7 +107,7 @@
       "price": 40,
       "category": "Fruits",
       "image": "https://i5.walmartimages.com/asr/373f0c0a-d976-4518-967c-9e8c626d1a10.fd992b4534c99ffa7bba91525be393cb.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF",
-      "quantity": 1
+      "quantity": 2
     },
     {
       "id": "8",
@@ -115,6 +115,14 @@
       "price": 15,
       "category": "Vegetables",
       "image": "https://images.ibspot.com/s5zllnkjx9ge3zttpy7hcqo9asxx?width=800&height=800&format=webp",
+      "quantity": 1
+    },
+    {
+      "id": "9",
+      "name": "Whole Wheat Bread",
+      "price": 80,
+      "category": "Bakery",
+      "image": "https://www.girlversusdough.com/wp-content/uploads/2025/09/whole-grain-seeded-bread-soft-crumb.jpg",
       "quantity": 1
     }
   ]
