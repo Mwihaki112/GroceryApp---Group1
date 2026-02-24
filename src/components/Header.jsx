@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-container">
-        <Link to="/" className="logo">GroceryMVP</Link>
+        <Link to="/" className="logo">Your Grocery</Link>
         <nav className="nav-links">
           <NavLink to="/">Home</NavLink>
           <NavLink to="/shop">Shop</NavLink>
