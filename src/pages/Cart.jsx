@@ -43,7 +43,7 @@ const Cart = () => {
         <div key={item.id} className="cart-item">
           <div>
             <h2>{item.name}</h2>
-            <p>${item.price.toFixed(2)}</p>
+            <p>Ksh.{item.price.toFixed(2)}</p>
           </div>
 
           <div>
@@ -62,7 +62,7 @@ const Cart = () => {
         </div>
       ))}
 
-      <h2>Grand Total: ${grandTotal.toFixed(2)}</h2>
+      <h2>Grand Total: Ksh.{grandTotal.toFixed(2)}</h2>
     </div>
   );
 };
