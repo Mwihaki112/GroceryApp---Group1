@@ -94,14 +94,6 @@
   ],
   "cart": [
     {
-      "id": "1",
-      "name": "Organic Bananas",
-      "price": 15,
-      "category": "Fruits",
-      "image": "https://images.unsplash.com/photo-1603833665858-e61d17a86224?w=400",
-      "quantity": 1
-    },
-    {
       "id": "3",
       "name": "Brown Eggs",
       "price": 10,

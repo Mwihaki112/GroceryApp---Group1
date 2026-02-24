@@ -13,6 +13,8 @@ body {
   background: #f5f7fa;
   color: #1a1a1a;
   line-height: 1.6;
+    display: flex;
+  justify-content: center;  /* centers horizontally */
 }
 
 a {
@@ -28,9 +30,11 @@ a {
   background: white;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
   padding: 1rem 2rem;
-  position: sticky;
+  position: fixed;   /* changed from sticky */
   top: 0;
-  z-index: 100;
+  left: 0;
+  width: 100%;       /* make it full width */
+  z-index: 1000;
 }
 
 .header-container {
@@ -275,7 +279,7 @@ a {
   justify-content: center; /* Optional: center vertically if section has height */
   padding: 2rem 1rem;
   background: #e0e7ff; /* subtle highlight */
-  border-radius: 16px;
+  border-radius: 20px;
   margin: 2rem auto;
-  max-width: 500px; /* Optional: limit width for better readability */
+  max-width: 900px; /* Optional: limit width for better readability */
 }
