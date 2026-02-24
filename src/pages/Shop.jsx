@@ -15,7 +15,7 @@ const Shop = () => {
   const activeCategory = searchParams.get("category") || "All";
 
   useEffect(() => {
-    axios.get("http://localhost:3000/products")
+    axios.get("http://localhost:5000/products")
       .then(res => {
         setProducts(res.data);
       })

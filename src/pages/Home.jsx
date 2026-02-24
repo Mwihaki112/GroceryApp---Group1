@@ -29,8 +29,8 @@ const Home = () => {
       </section>
 
       <section className="promo">
-        <h3>Free Delivery on Orders</h3>
-        <p>Enjoy fresh groceries delivered right to your doorstep</p>
+        <h3>Free Delivery on Orders Above Ksh 3000.</h3>
+        <p>Enjoy fresh groceries delivered right to your doorstep.</p>
       </section>
 
     </div>

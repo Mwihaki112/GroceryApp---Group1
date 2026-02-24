@@ -9,7 +9,7 @@ export const CartProvider = ({ children }) => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/cart")
+      .get("http://localhost:5000/cart")
       .then(res => setCart(res.data))
       .catch(() => toast.error("Failed to load cart"));
   }, []);
@@ -31,7 +31,7 @@ export const CartProvider = ({ children }) => {
         );
 
         await axios.put(
-          `http://localhost:3000/cart/${product.id}`,
+          `http://localhost:5000/cart/${product.id}`,
           updatedItem
         );
       } else {
@@ -40,7 +40,7 @@ export const CartProvider = ({ children }) => {
         setCart(prev => [...prev, newProduct]);
 
         await axios.post(
-          "http://localhost:3000/cart",
+          "http://localhost:5000/cart",
           newProduct
         );
       }
@@ -55,7 +55,7 @@ export const CartProvider = ({ children }) => {
     try {
       setCart(prev => prev.filter(item => item.id !== id));
 
-      await axios.delete(`http://localhost:3000/cart/${id}`);
+      await axios.delete(`http://localhost:5000/cart/${id}`);
 
       toast.success("Removed from Cart!");
     } catch (error) {

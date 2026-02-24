@@ -14,7 +14,7 @@ const Admin = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/products")
+      .get("http://localhost:5000/products")
       .then(res => setProducts(res.data))
       .catch(() => toast.error("Failed to load products"));
   }, []);
@@ -29,7 +29,7 @@ const Admin = () => {
     }).then((result) => {
       if (result.isConfirmed) {
         axios
-          .delete(`http://localhost:3000/products/${id}`)
+          .delete(`http://localhost:5000/products/${id}`)
           .then(() => {
             setProducts(prev =>
               prev.filter(p => p.id !== id)
@@ -53,7 +53,7 @@ const Admin = () => {
     };
 
     axios
-      .post("http://localhost:3000/products", newProduct)
+      .post("http://localhost:5000/products", newProduct)
       .then(res => {
         setProducts(prev => [...prev, res.data]);
         toast.success("Product added!");
@@ -128,7 +128,7 @@ const Admin = () => {
             />
 
             <h2>{product.name}</h2>
-            <p>${product.price.toFixed(2)}</p>
+            <p>Ksh.{product.price.toFixed(2)}</p>
             <p>{product.category}</p>
 
             <button onClick={() => handleDelete(product.id)}>

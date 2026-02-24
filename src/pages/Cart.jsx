@@ -23,7 +23,7 @@ const Cart = () => {
       // Optimistic UI update
       setCart(updatedCart);
 
-      await axios.put(`http://localhost:3000/cart/${id}`, updatedItem);
+      await axios.put(`http://localhost:5000/cart/${id}`, updatedItem);
     } catch (error) {
       toast.error("Failed to update quantity");
     }
